@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Change e Data Atributtes </title>
+
+    <style>
+        body {
+            height: 100vh;
+            overflow-y: hidden;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: rgb(142, 142, 243);
+        }
+
+        input {
+            margin: 10px;
+            padding: 10px 14px;
+            border-radius: 14px;
+            background-color: rgb(250, 201, 128);
+        }
+
+        .acertou {
+            background-color: gold;
+        }
+
+        .errou {
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <label for="pergunta1"> 2 + 2 </label>
+    <input id="pergunta1" type="text" data-resposta="4">
+    <!-- data = classe, resposta = nome da classe e "4" = valor da classe -->
+    <label for="pergunta2"> 8 - 4 </label>
+    <input id="pergunta2" type="text" data-resposta="4">
+    <label for="pergunta3"> 3 x 3 </label>
+    <input id="pergunta3" type="text" data-resposta="9">
+    <label for="pergunta4"> 10 / 5 </label>
+    <input id="pergunta4" type="text" data-resposta="2">
+</body>
+
+<script>
+    const inputs = document.querySelectorAll('input')
+
+    inputs.forEach(input => {
+        input.addEventListener('change', function (event) {
+            const inputModificado = event.target
+
+            if (inputModificado.dataset.resposta === inputModificado.value) {
+                inputModificado.classList.add('acertou')
+            } else {
+                inputModificado.classList.add('errou')
+            }
+        })
+    })
+</script>
+
+</html>

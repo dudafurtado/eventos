@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: cadetblue;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input {
+    background-color: bisque;
+    padding: 12px;
+    color: black;
+    border-radius: 10px;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 4px;
+    font-weight: bolder;
+}
+
+.escondido {
+    display: none;
+}

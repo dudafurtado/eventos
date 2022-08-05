@@ -1,0 +1,61 @@
+body {
+    height: 100vh;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: cornflowerblue;
+}
+
+.modal {
+    padding: 35px;
+    border-radius: 13px;
+    background-color: coral;
+
+    margin-bottom: 25px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sim, .nao {
+    all: unset;
+
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.sim {
+    padding: 6px 15px;
+    background-color: rgb(54, 250, 54);
+}
+
+.nao {
+    padding: 6px 15px;
+    background-color: rgb(255, 4, 4);
+}
+
+.inscricao {
+    all: unset;
+
+    cursor: pointer;
+    padding: 19px 33px;
+    border-radius: 13px;
+    background-color: red;
+    font-weight: bold;
+}
+
+.escondido {
+    display: none;
+}
+
+.inscrito {
+    background-color: gray;
+    color: white;
+}

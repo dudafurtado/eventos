@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  overflow-y: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: lightskyblue;
+
+  font-family: sans-serif;
+  font-size: 120%;
+}
+
+.modal {
+  background-color: grey;
+  color: white;
+
+  padding: 1.3rem;
+
+  margin-bottom: 20px;
+}
+
+.escondido {
+  display: none;
+}
+
+.inscricao {
+  cursor: pointer;
+  font-size: 80%;
+
+  background-color: crimson;
+  color: white;
+
+  padding: 0.7rem;
+  border: 0;
+}
+
+.inscrito {
+  cursor: pointer;
+  background-color: grey;
+}

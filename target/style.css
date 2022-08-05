@@ -1,0 +1,52 @@
+body {
+    height: 100vh;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(240, 88, 41);
+    color: rgb(1, 252, 168);
+    font-size: 25px;
+    font-weight: 900;
+    
+}
+
+input {
+    all: unset;
+    cursor: pointer;
+    padding: 15px;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+    margin: 0px 12px;
+}
+
+.input-1 {
+    background-color: yellow;
+    margin-bottom: 25px;
+    
+}
+
+.input-2 {
+    background-color: yellowgreen;
+}
+
+.primeira-fileira, .segunda-fileira {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+
+    margin: 26px;
+}
+
+.escondido {
+    display: none;
+}
